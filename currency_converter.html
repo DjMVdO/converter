@@ -1,6 +1,7 @@
  <div id = "databinding" style = "">
    <h1>Currency Converter</h1>
-   <span>Choose your Amount : </span><input type = "number" v-model.number = "amount" placeholder = "Enter Amount" /><br/><br/>
+   <span>Choose your Amount : </span>
+   <input type = "number" v-model.number = "amount" placeholder = "Enter Amount" /><br/><br/>
    <span>Departure money : </span>
    <select v-model = "departmoney" style = "width:300px;font-size:25px;">
      <option v-for = "(a, index) in currencyfrom"  v-bind:value = "a.name">{{a.desc}}</option>
@@ -9,5 +10,5 @@
    <select v-model = "arrivalmoney" style = "width:300px;font-size:25px;">
      <option v-for = "(a, index) in currencyfrom" v-bind:value = "a.name">{{a.desc}}</option>
    </select><br/><br/>
-   <span> {{amount}} {{departmoney}} equals {{finalamount}} {{arrivalmoney}}</span>
+   <span> amount departmoney equals finalamount arrivalmoney</span>
 </div>
